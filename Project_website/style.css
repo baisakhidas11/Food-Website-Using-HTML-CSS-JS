@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+* {
+  padding: 0px;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Balsamiq Sans", cursive;
+}
+body {
+  --def: #fff;
+  --inv: #000;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*Navigation bar*/
+nav {
+  background: #064372;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 60px;
+  line-height: 80px;
+  padding: 0 50px;
+  font-family: "Italianno", cursive;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+  font-family: "Balsamiq Sans", cursive;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 37px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/*Navigation bar*/
+
+.menu {
+  background-color: #050440;
+  color: white;
+  font-family: "Balsamiq Sans", cursive;
+}
+.vid {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vid h1 {
+  font-family: "Lobster", cursive;
+  font-size: 4em;
+  text-align-last: center;
+  color: white;
+  z-index: 1;
+}
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.popular .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.popular .box-container .box {
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  text-align: center;
+  flex: 1 1 30rem;
+  position: relative;
+}
+.popular .box-container .box img {
+  height: 22rem;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.popular .box-container .box .price {
+  position: absolute;
+  font-family: "Balsamiq Sans", cursive;
+  background: var(--red);
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.popular .box-container .box h3 {
+  color: #333;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+}
+
+.popular .box-container .box .stars i {
+  color: gold;
+  font-size: 1.7rem;
+  padding: 1rem 0.1rem;
+}
+
+.heading {
+  font-size: 3rem;
+  font-family: "Rampart One", cursive;
+  padding: 20px;
+  background-color: #064372;
+  color: white;
+  text-align: center;
+}
+
+/*Button*/
+footer {
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}
+.about {
+  /*background-color: #e3ffff;
+  padding: 100px;
+  margin: 50px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 165px 30px rgba(0, 0, 0, 0.48);
+  -webkit-box-shadow: 0px 0px 165px 30px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 0px 165px 30px rgba(0, 0, 0, 0.48);*/
+  position: relative;
+  margin-top: -451px;
+  margin-left: 656px;
+  margin-right: 50px;
+  margin-bottom: 135px;
+  background: rgba(227, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 100px;
+  font-size: 1.5rem;
+}
+.contact {
+  display: flex;
+  padding: 20px;
+  font-size: 1rem;
+  position: relative;
+  text-align: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #e3ffff;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0px 0px 165px 30px rgba(0, 0, 0, 0.48);
+  -webkit-box-shadow: 0px 0px 165px 30px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 0px 165px 30px rgba(0, 0, 0, 0.48);
+}
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.details {
+  background-color: #e3ffff;
+  padding: 100px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 165px 30px rgba(0, 0, 0, 0.48);
+  -webkit-box-shadow: 0px 0px 165px 30px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 0px 165px 30px rgba(0, 0, 0, 0.48);
+}
+#slider {
+  overflow: hidden;
+  height: 434px;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+.carousel {
+  width: 42%;
+  padding: 16px;
+  margin: 60px;
+}
